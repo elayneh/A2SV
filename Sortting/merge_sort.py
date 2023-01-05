@@ -2,6 +2,10 @@
 
 from random import randint
 
+"""The input list is divided into two parts and these are solved recursively,
+after solving the subproblems they are merged by scanning the resultant problems.
+"""
+
 def mergeSort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
