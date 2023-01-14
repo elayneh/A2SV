@@ -1,11 +1,9 @@
-# usr/bin/python3
+#!/usr/bin/python3
 
 """Works well for small files(with large value and small keys)
 Requires no additional storage space
 Doesn't scale well O(n2)
 """
-
-#User function Template for python3
 
 class Solution:
     def select(self, arr, i):
