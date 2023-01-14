@@ -4,17 +4,34 @@
 Requires no additional storage space
 Doesn't scale well O(n2)
 """
-from random import randint
+
+#User function Template for python3
+
+class Solution:
+    def select(self, arr, i):
+        for i in range(arr):
+            return arr[i]
+
+    def selectionSort(self, arr,n):
+        for i in range(n):
+            for j in range(i + 1, n):
+                if arr[i] > arr[j]:
+                    arr[i], arr[j] = arr[j], arr[i]
+        return arr
 
 
-def selectionSort(arr):
-    n = len(arr)
 
-    for i in range(n):
-        for j in range(i + 1, n):
-            if arr[i] > arr[j]:
-                arr[i], arr[j] = arr[j], arr[i]
+#{
+ # Driver Code Starts
+#Initial Template for Python 3
 
-    return arr
-
-print(selectionSort([randint(10, 100) for i in range(10)]))
+if __name__ == '__main__':
+    t = int(input("How many arrays are You want to sort:\n"))
+    for _ in range(t):
+        n = int(input("Enter array length:\n"))
+        arr = list(map(int, input().strip().split()))
+        Solution().selectionSort(arr, n)
+        for i in range(n):
+            print(arr[i],end=" ")
+        print()
+# } Driver Code Ends
