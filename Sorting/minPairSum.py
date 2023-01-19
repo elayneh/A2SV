@@ -10,7 +10,7 @@ Return the minimized maximum pair sum after optimally pairing up the elements.
 class Solution:
     def minPairSum(self, nums: list[int])-> int:
         sorted_arr = sorted(nums)
-        reversed_sorted_arr = sorted(nums)[::-1]
+        reversed_sorted_arr = sorted(nums, reverse=True)
         sum = []
 
         for a, b in zip(sorted_arr, reversed_sorted_arr):
