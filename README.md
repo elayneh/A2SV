@@ -1,3 +1,5 @@
+This directory contains solutions for leetcode, hackerrank and other different platform problems.
+
 SORTING:
 
 Stability of sorting algorithms:
