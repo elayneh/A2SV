@@ -20,7 +20,6 @@ heapq functions:
     nsmallest(k, iterable, key=fun) -> Return k smallest elements from the iterable specified and satisfy the key if mentioned
 
 """
-
 import heapq as heap
 
 
@@ -39,5 +38,4 @@ print("The pushed element using heapreplace() is: ", heap.heapreplace(List, 777)
 print("The modified heap after heapreplace()) is: ", List)
 print("The 3 largest numbers in list are: ", heap.nlargest(3, List))
 print("The 3 smallest numbers from the list is: ", heap.nsmallest(3, List))
-
 
