@@ -3,39 +3,28 @@ A sequence of numbers is called arithmetic if it consists of at least two elemen
 a sequence s is arithmetic if and only if s[i+1] - s[i] == s[1] - s[0] for all valid i.
 
 For example, these are arithmetic sequences:
-
 1, 3, 5, 7, 9
 7, 7, 7, 7
 3, -1, -5, -9
 The following sequence is not arithmetic:
-
 1, 1, 2, 5, 7
 You are given an array of n integers, nums, and two arrays of m integers each, l and r, representing the m range queries, where the ith query is the range [l[i], r[i]]. All the arrays are 0-indexed.
-
 Return a list of boolean elements answer, where answer[i] is true if the subarray nums[l[i]], nums[l[i]+1], ... , nums[r[i]] can be rearranged to form an arithmetic sequence, and false otherwise.
-
 """
-
-
 class Solution:
     def checkArithmeticSubarrays(self, nums: list[int], l: list[int], r: list[int]) -> list[bool]:
         d = {}
         res = []
         for i in range(len(l)):
             d[i] = nums[l[i]: r[i] + 1]
-    
         for i in range(len(d)):
             j = 0
             d[i].sort()
-    
             for k in range(2, len(d[i])):
                 if d[i][k] - d[i][k - 1] != d[i][1] - d[i][0]:
                     res.append(False)
                     break
-                
                 j += 1
-    
             if j == len(d[i]) - 2:
                 res.append(True)
-    
         return res
