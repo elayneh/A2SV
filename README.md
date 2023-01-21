@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+#!/usr/bin/python3
+
 This directory contains solutions for leetcode, hackerrank and other different platform problems.
 
 SORTING:
@@ -12,5 +12,3 @@ Classified sorting algorithms based on in-place or not:
     Merge and Quick are not in-place
 
 SEARCHING:
-
->>>>>>> 9f50e67733cda8d67f64a518acda59e3911dd4f9
