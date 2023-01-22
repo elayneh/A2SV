@@ -23,7 +23,7 @@ class Solution:
                 stack.append(item)
             elif item in close_list:
                 pos = close_list.index(item)
-                if len(stack) > 0 and open_list[pos] == stack[len(stack) - 1]:
+                if len(stack) > 0 and open_list[pos] == stack[-1]:
                     stack.pop()
                 else:
                     return False
