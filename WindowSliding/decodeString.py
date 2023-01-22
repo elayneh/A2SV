@@ -29,7 +29,3 @@ class Solution():
                     k = stack.pop() + k
                 stack.append(int(k) * substr)
         return "".join(stack)
-
-
-s = Solution()
-print(s.decodeString("2[belayneh]3[getachew]tefera"))
