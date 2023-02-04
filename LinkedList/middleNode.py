@@ -12,8 +12,8 @@ If there are two middle nodes, return the secodnd middle node.
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         fastPtr = slowPtr = head
-        while slowPtr and fastPtr and fastPtr.next:
+        while slowPtr and fastPtr.next:
             slowPtr = slowPtr.next
-            fastPtr = slowPtr.next.next
+            fastPtr = fastPtr.next.next
 
         return slowPtr
