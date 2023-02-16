@@ -1,0 +1,6 @@
+The main advantage of the linked list over the array:
+    deletion and insertion is too fast
+
+linked lists have references to different, non-contiguous location in memorty, but array strictly contiguous.
+
+Caching is fast in array but caching is not optimized and access time takes longer in linked list.
