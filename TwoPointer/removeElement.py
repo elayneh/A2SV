@@ -10,7 +10,6 @@ class Solution():
         for num in nums:
             if num != val:
                 nums[ptr] = num
-                ptr += 1
-
-
+                ptr +=  1
+                
         return ptr
