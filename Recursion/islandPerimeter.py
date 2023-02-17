@@ -9,15 +9,30 @@ The island doesn't have "lakes", meaning the water inside isn't connected to the
 """
 class Solution:
     def islandPerimeter(self, grid: list[list[int]]) -> int:
-        perimeter = 0
+        visit = set()
+        
+        def dfs(i, j):
+            if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]) \
+                or grid[i][j] == 0:
+                    return 1
+            
+            if (i, j) in visit:
+                return 0
+                
+            visit.add((i, j))
+            
+            premiter = dfs(i, j + 1)
+            premiter += dfs(i+1, j)
+            premiter += dfs(i, j - 1)
+            premiter += dfs(i-1, j)
+            
+            return premiter
+        
         for i in range(len(grid)):
             for j in range(len(grid[0])):
-                if grid[i][j] == 1:
-                    perimeter += 4
-                    if i > 0 and grid[i-1][j] == 1:
-                        perimeter -= 2
-                    if j > 0 and grid[i][j-1] == 1:
-                        perimeter -= 2
-        return perimeter
+                if grid[i][j]:
+                    return dfs(i, j)
+            
+            
 s = Solution()
-print(s.islandPerimeter([[1,0,2,0], [2,3,4,1]]))
+print(s.islandPerimeter([[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]))
