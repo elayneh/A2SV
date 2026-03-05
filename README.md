@@ -1,8 +1,6 @@
-# A2SV — Algorithm & Data Structure Solutions
+# A2SV - Algorithm & Data Structure Solutions
 
 A curated collection of algorithm and data structure problem solutions in Python (and some C++), organized by topic. Problems are sourced from LeetCode, HackerRank, and other competitive programming platforms.
-
----
 
 ## Topics Covered
 
@@ -63,22 +61,22 @@ A curated collection of algorithm and data structure problem solutions in Python
 
 ```
 A2SV/
-├── Sorting/          # Sorting algorithms and problems
-├── Searching/        # Searching algorithms
-├── LinkedList/       # Linked list problems
-├── Stack/            # Stack-based problems
-├── MonotonicStack/   # Monotonic stack problems
-├── TwoPointer/       # Two pointer technique
-├── WindowSliding/    # Sliding window technique
-├── PrefixSum/        # Prefix sum technique
-├── Recursion/        # Recursive problem solving
-├── Math/             # Math-based problems
-└── hashing.py        # Standalone hashing demo
+    Sorting/          # Sorting algorithms and problems
+    Searching/        # Searching algorithms
+    LinkedList/       # Linked list problems
+    Stack/            # Stack-based problems
+    MonotonicStack/   # Monotonic stack problems
+    TwoPointer/       # Two pointer technique
+    WindowSliding/    # Sliding window technique
+    PrefixSum/        # Prefix sum technique
+    Recursion/        # Recursive problem solving
+    Math/             # Math-based problems
+    hashing.py        # Standalone hashing demo
 ```
 
 ---
 
 ## Languages Used
 
-- **Python 3** — primary language for all solutions
-- **C++** — used in select Two Pointer problems (`houseRobber.cpp`, `minWindowSubstring.cpp`)
+**Python 3** primary language for all solutions
+**C++** used in select Two Pointer problems (`houseRobber.cpp`, `minWindowSubstring.cpp`)
