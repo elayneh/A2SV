@@ -1,4 +1,4 @@
-# A2SV - Algorithm & Data Structure Solutions
+# A2SV Algorithm & Data Structure Solutions
 
 A curated collection of algorithm and data structure problem solutions in Python (and some C++), organized by topic. Problems are sourced from LeetCode, HackerRank, and other competitive programming platforms.
 
